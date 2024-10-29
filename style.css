@@ -15,7 +15,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(13, 13, 13);
 }
 
 .header-img {
@@ -58,6 +58,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
 }
 
 .home-left-side {
@@ -69,4 +70,12 @@ header {
   justify-content: center;
   flex-direction: column;
   background-color: transparent;
+}
+
+#sobre {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
