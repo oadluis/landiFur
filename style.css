@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  padding: 0.6rem 8rem;
+  padding: 0.6rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,4 +45,28 @@ header {
   text-decoration: none;
   font-size: 1.2rem;
   color: white;
+}
+
+#home {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-image: url(imagens/background-tamplate-furia.png);
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-left-side {
+  width: 50%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 5rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
 }
