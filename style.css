@@ -77,6 +77,21 @@ header {
   background-color: transparent;
 }
 
+.home-left-side > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.atention {
+  color: #0090e3;
+}
+
+.home-left-side > h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: #dcdcdc;
+}
+
 #sobre {
   width: 100vw;
   height: 100dvh;
@@ -99,6 +114,7 @@ header {
   padding: 0rem 5rem 0rem 5rem;
   background-color: rgba(0, 0, 0, 0.859);
   color: white;
+  overflow: hidden;
 }
 
 .sobre-right-side {
@@ -108,11 +124,11 @@ header {
 
 .title-sobre {
   font-size: 1.9rem;
-  margin-bottom: 2rem;
+  padding: 5rem 0rem 2rem;
 }
 
 .content-p {
-  font-size: 1.01rem;
+  font-size: 0.95rem;
   margin-bottom: 2rem;
 }
 
@@ -122,12 +138,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background: linear-gradient(
+    to bottom right,
+    black,
+    #141414,
+    #242424,
+    rgb(52, 52, 52)
+  );
 }
 
-.novidades-left-side {
+.novidades-left-size {
   width: 50%;
   height: 100%;
-  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.novidades-image {
+  width: 500px;
+}
+
+.novidades-right-side {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,19 +170,32 @@ header {
 
 .card {
   width: 60%;
-  height: 50%;
-  padding: 4rem 2rem;
+  height: 60%;
+  padding: 5rem 2rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.859);
+  background-color: rgb(42, 42, 42);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   border-radius: 20px;
+  box-shadow: 1px 4px 30px 8px #141414;
+  overflow: hidden;
+}
+
+.copy-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.copy-card > h2 {
+  font-size: 2rem;
 }
 
 .inputs {
-  width: 80%;
+  width: 85%;
   height: auto;
   display: flex;
   align-items: start;
@@ -162,11 +210,30 @@ header {
 }
 
 .input {
-  width: 80%;
+  width: 92%;
   padding: 1.2rem;
   margin: 0rem 0rem 2rem 0rem;
   border-radius: 4px;
   border: none;
+  font-size: 1.12rem;
+  background-color: rgb(79, 79, 79);
+  color: white;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.card-button {
+  width: 100%;
+  height: auto;
+  font-size: 1.2rem;
+  padding: 2rem;
+  margin: 1rem 0rem 2rem 0rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  color: white;
 }
 
 #footer {
@@ -180,4 +247,139 @@ header {
 
 #footer > p > a {
   color: rgb(122, 177, 249);
+}
+
+@media (max-width: 1441px) {
+  .home-left-side > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .home-left-side > h4 {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .title-sobre {
+    font-size: 1.4rem;
+    padding: 5rem 0rem 2rem;
+  }
+
+  .content-p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .copy-card > h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .copy-card > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .header-img {
+    max-width: 50px;
+  }
+
+  .header-right-side {
+    width: 40%;
+  }
+
+  .header-links-list {
+    justify-content: space-between;
+  }
+
+  .header-links-list > li > a {
+    font-size: 1rem;
+  }
+
+  .home-left-side > h1 {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .home-left-side > h4 {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .title-sobre {
+    font-size: 1.3rem;
+    padding: 5rem 0rem 2rem;
+  }
+
+  .content-p {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .novidades-image {
+    width: 400px;
+  }
+
+  .novidades-right-side {
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-right: 4rem;
+  }
+
+  .copy-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .copy-card > h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .copy-card > p {
+    font-size: 0.8rem;
+  }
+
+  .inputs {
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: blue; */
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+    margin: 0rem 0rem 0.5rem;
+  }
+
+  .input:focus {
+    outline: none;
+  }
+
+  .card-button {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 2rem;
+    margin: 1rem 0rem 2rem 0rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+  }
 }
