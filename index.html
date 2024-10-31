@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+
     <title>Home - FURIA</title>
   </head>
   <body>
@@ -19,13 +24,25 @@
       <div class="header-right-side">
         <nav class="header-nav-bar">
           <ul class="header-links-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre nós</a></li>
-            <li><a href="#novidades">Fique por dentro</a></li>
+            <li><a class="links" href="#home">Home</a></li>
+            <li><a class="links" href="#sobre">Sobre nós</a></li>
+            <li><a class="links" href="#novidades">Fique por dentro</a></li>
           </ul>
         </nav>
       </div>
+      <div class="menu-hamburguer">
+        <span class="material-symbols-outlined menu-hamburguer"> menu </span>
+      </div>
     </header>
+    <article class="menu-mobile hidden">
+      <nav class="header-nav-bar-mobile">
+        <ul class="header-links-list-mobile">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#novidades">Fique por dentro</a></li>
+        </ul>
+      </nav>
+    </article>
 
     <main>
       <section id="home">
@@ -129,5 +146,6 @@
         <a href="https://github.com/oadluis">oadluis (André Luis Barbosa)</a>
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
